@@ -30,8 +30,6 @@ Ctrl + H ---> 删除光标前一个字符
 ## shell 常用命令总结
 ###1. 常见命令汇总
 
-
-
 ls ---> 常看当前目录文件及其文件夹
 
 df -l ---> 查看磁盘空间
@@ -45,6 +43,24 @@ grep *** ---> 查询
 rm -rf step00000[5,9,1]* --->利用正则删除满足[]表示或，？表示任意一个字符等
 
 ps aux ---> 查看进程使用情况
+
+2. 远程连接服务器
+
+ssh 用户名@服务器ip
+
+注意出现如下错误：
+
+condition1: 出现：ssh: connect to host port 22: Connection refused
+
+解决办法:
+
+sudo apt-get install openssh-server
+
+service sshd restart
+
+3. 命令行拷贝文件到服务器
+
+scp -r 需要拷贝的文件地址 用户名@地址:~/下载
 ###2. 一个常见的终端安装
 
  sudo apt-get install terminator
