@@ -60,7 +60,8 @@ service sshd restart
 
 3. 命令行拷贝文件到服务器
 
-scp -r 需要拷贝的文件地址 用户名@地址:~/下载
+scp -r 需要拷贝的文件地址 用户名@地址:服务器要存文件地址
+
 ###2. 一个常见的终端安装
 
  sudo apt-get install terminator
